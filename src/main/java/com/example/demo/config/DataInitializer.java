@@ -21,7 +21,7 @@ public class DataInitializer implements CommandLineRunner {
     
     @Override
     public void run(String... args) {
-        log.info("🚀 Initializing sample data for One-to-Many relationship demo...");
+        log.info("Initializing sample data for One-to-Many relationship demo...");
         
         // Create Author 1: J.K. Rowling with books
         Author jkRowling = new Author();
@@ -52,7 +52,7 @@ public class DataInitializer implements CommandLineRunner {
         jkRowling.addBook(hp3);
         
         authorRepository.save(jkRowling);
-        log.info("✅ Created Author: {} with {} books", jkRowling.getName(), jkRowling.getBooks().size());
+        log.info("Created Author: {} with {} books", jkRowling.getName(), jkRowling.getBooks().size());
         
         // Create Author 2: George R.R. Martin with books
         Author grrMartin = new Author();
@@ -76,7 +76,7 @@ public class DataInitializer implements CommandLineRunner {
         grrMartin.addBook(got2);
         
         authorRepository.save(grrMartin);
-        log.info("✅ Created Author: {} with {} books", grrMartin.getName(), grrMartin.getBooks().size());
+        log.info(" Created Author: {} with {} books", grrMartin.getName(), grrMartin.getBooks().size());
         
         // Create Author 3: J.R.R. Tolkien with books
         Author jrrTolkien = new Author();
@@ -107,11 +107,11 @@ public class DataInitializer implements CommandLineRunner {
         jrrTolkien.addBook(hobbit);
         
         authorRepository.save(jrrTolkien);
-        log.info("✅ Created Author: {} with {} books", jrrTolkien.getName(), jrrTolkien.getBooks().size());
+        log.info(" Created Author: {} with {} books", jrrTolkien.getName(), jrrTolkien.getBooks().size());
         
-        log.info("📚 Sample data initialized successfully!");
-        log.info("📊 Total Authors: {}", authorRepository.count());
-        log.info("🎯 You can now test the API endpoints at http://localhost:8888/api");
+        log.info("Sample data initialized successfully!");
+        log.info("Total Authors: {}", authorRepository.count());
+        log.info(" You can now test the API endpoints at http://localhost:8888/api");
     }
 }
 
