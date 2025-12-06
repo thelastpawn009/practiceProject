@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Demo {
+public class DemoEntity {
     @GeneratedValue
     @Id
     Integer id;

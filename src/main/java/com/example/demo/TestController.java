@@ -22,8 +22,8 @@ public class TestController {
     }
 
     @GetMapping("/test")
-    public List<Demo> getDemo(){
-        Demo demo = new Demo();
+    public List<DemoEntity> getDemo(){
+        DemoEntity demo = new DemoEntity();
         demo.setName("new name");
         demoRepository.save(demo);
         return demoRepository.findAll();
