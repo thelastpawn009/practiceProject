@@ -19,7 +19,7 @@ public class IncidentController {
         return incidentCreateService.createIncident(alert);
     }
 
-    @GetMapping("getIncident")
+    @GetMapping("/getIncident")
     public Incident getIncident (@Valid @RequestParam String incidentId) {
         return incidentCreateService.getIncident(incidentId);
     }
